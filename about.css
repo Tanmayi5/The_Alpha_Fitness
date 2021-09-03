@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    font-size: 22px;
+}
+nav li{
+    padding: 25px;
+
+}
+.navbar-dark .navbar-toggler-icon {
+    font-size: 30px;
+    border: 5px solid white;
+    border-radius: 10px;    
+}
+.navbar-dark img{
+    width: 150px;
+    height: 50px;
+}
+.carousel-inner{
+    width: 100%;
+    height: 60vh;
+}
+
+.container,h1{
+    text-align: center;
+    margin: 10px;
+}
+
+p{
+    text-align: center;
+    font-size: 40px;
+}
+.container img{
+    height: 200px;
+    width: 250px;
+    margin: 30px;
+    animation: magic 10s;
+}
+
+.container h1{
+    font-size: 40px;
+    margin: 20px;
+}
+img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    
+}
+#team{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#team img{
+    margin: 6vh 10vh 0 ;
+    border-radius: 50%;
+    animation: magic 15s;
+}
+
+@media (max-width: 800px) {
+    #team{
+      flex-direction: column;
+    }
+}
+@media (min-width: 800px) and (max-width:1200px ){
+    #team img{
+        margin: 10vh 2px;
+    }
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    color: white;
+    font-size: 5vh;
+    align-items: center;
+}
+i{
+    margin: 3vh;
+}
+a i{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:400px){
+    .container img{
+        width: 250px;
+        height: 150px;
+    }
+    #team img{
+        width: 90px;
+        height: 80px;
+    }
+}
+
+@keyframes magic{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

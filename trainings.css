@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-size: 22px;
+
+}
+nav li{
+    padding: 25px;
+
+}
+.navbar-dark .navbar-toggler-icon {
+    font-size: 30px;
+    border: 5px solid white;
+    border-radius: 10px;    
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 60vh;
+}
+.navbar-dark img{
+    width: 150px;
+    height: 50px;
+}
+p{
+    text-align: center;
+    padding: 40px 0 0 0;
+    font-size: 40px;
+}
+.container{
+    display: flex;
+    margin: 20vh 0;
+    flex-direction: row;
+}
+.container img{
+    width: 500px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+   
+}
+.img,.img-content{
+    margin: 0 40px;
+}
+
+.container h1{
+    padding: 0;
+}
+.info{
+    margin: 0 0 0 6vh;
+    width:500px;
+}
+
+.button{
+    background:none;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 40px;
+    animation: magic 1s infinite;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+@media (max-width:990px){
+    .container{
+        flex-direction: column;
+    }
+    .info{
+        margin: 3vh;
+        width: 450px;
+    }
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    color: white;
+    font-size: 5vh;
+    align-items: center;
+}
+i{
+    margin: 3vh;
+}
+
+@keyframes magic{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+a i{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width:600px){
+    .container img{
+        width: 300px;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .info{
+        width: 325px;
+    }
+    .button{
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+        padding: 5px;
+        margin-left: 80px;
+        
+    }
+}
+
+@media (max-width:400px){
+    .container img{
+        width: 250px;
+        height: 150px;
+    }
+    .info{
+        width: 250px;
+    }
+    .button{
+        width: 90px;
+        font-size: 12px;
+    }
+}

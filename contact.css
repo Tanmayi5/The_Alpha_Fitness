@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-size: 22px;
+}
+nav li{
+    padding: 25px;
+
+}
+.navbar-dark .navbar-toggler-icon {
+    font-size: 30px;
+    border: 5px solid white;
+    border-radius: 10px;    
+}
+
+.navbar-dark img{
+    width: 150px;
+    height: 50px;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 60vh;
+}
+.container{
+    /* background-color: cadetblue; */
+    font-size: 20px;
+    width: 450px;
+    margin: 10vh;
+    animation: magic 5s;
+}
+form{
+    width: 700px;
+    margin: 0 40vh;
+}
+
+p{
+    text-align: center;
+    font-size: 40px;
+}
+.button {
+    transition-duration: 0.4s;
+    background: none;
+    padding: 5px;
+    margin: 5vh 25vh;
+    width: 200px;
+}
+form{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    padding: 40px;
+}
+  
+.button:hover {
+    background-color: black; /* Green */
+    color: white;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    color: white;
+    font-size: 5vh;
+    align-items: center;
+}
+i{
+    margin: 3vh;
+}
+a i{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:600px){
+    form{
+        width: 280px;
+        margin: 10px;
+    }
+    .button{
+        margin: 0;
+        width: 160px;
+    }
+    .container{
+        width: 300px;
+    }
+
+}
+@media (max-width:800px){
+    form{
+        width: 500px;
+        margin: 2vh;
+    }
+    .button{
+        margin-left: 18vh;
+    }
+}
+@media (max-width:992px){
+    form{
+        width: 330px;
+        margin: 5px;
+    }
+    .button{
+        margin: 4vh;
+    }
+    .container{
+        width: 700px;
+        margin: 2vh;
+    }
+}
+@media (min-width:992px){
+    form{
+        margin-left: 40vh;
+    }
+}
+
+@keyframes magic{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
